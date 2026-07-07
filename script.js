@@ -283,11 +283,11 @@ padding:30px;
 
 ACCESS GRANTED
 
-<br><br>
+⨥⨥⨥
 
 ...
 
-<br><br>
+⨥⨥⨥
 
 WELCOME BACK.
 
@@ -336,7 +336,7 @@ let messages=[
 "Someone was here before you.",
 
 
-"The Shepherd is still waiting.",
+"The God is still waiting.",
 
 
 "Do not answer quickly.",
@@ -443,7 +443,19 @@ console.log(
 
 
 
+setTimeout(()=>{
 
+let warning = document.createElement("p");
+
+warning.innerHTML =
+"The God knows you are still here...";
+
+warning.style.color="#990000";
+
+document.body.appendChild(warning);
+
+
+},40000);
 
 
 
