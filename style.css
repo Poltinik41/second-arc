@@ -1,0 +1,646 @@
+@font-face {
+
+    font-family: "Galho";
+
+    src: url("Galho.ttf");
+
+}
+
+
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    background:
+
+    radial-gradient(
+        ellipse at center,
+        #1a0007 0%,
+        #090909 45%,
+        #000000 100%
+    );
+
+    background-color: #000000;
+
+
+    color:#000000;
+
+
+    font-family:
+    "Courier New",
+    monospace;
+
+
+    overflow-x:hidden;
+
+
+}
+
+
+
+/* old damaged screen */
+
+
+body::before {
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    repeating-linear-gradient(
+        0deg,
+        rgba(255,255,255,0.025),
+        rgba(255,255,255,0.025) 1px,
+        transparent 2px,
+        transparent 5px
+    );
+
+
+    pointer-events:none;
+
+    z-index:20;
+
+}
+
+
+
+/* dark edges */
+
+
+.vignette {
+
+    position:fixed;
+
+    inset:0;
+
+
+    background:
+
+    radial-gradient(
+        circle,
+        transparent 30%,
+        rgba(0,0,0,.9)
+    );
+
+
+    pointer-events:none;
+
+    z-index:10;
+
+}
+
+
+
+
+
+
+
+/*
+========================
+
+HEADER
+
+========================
+*/
+
+
+.hero {
+
+
+    min-height:100vh;
+
+
+    padding-left:12%;
+
+    padding-top:18vh;
+
+
+    text-align:left;
+
+
+}
+
+
+
+.symbol {
+
+
+    color:#240000;
+
+
+    font-size:35px;
+
+
+    letter-spacing:10px;
+
+
+}
+
+
+
+
+h1 {
+
+
+    font-family:
+    "Galho",
+    "Times New Roman",
+    serif;
+
+
+    color:#656565;
+
+
+    font-size:85px;
+
+
+    font-weight:normal;
+
+
+    letter-spacing:5px;
+
+
+    line-height:1;
+
+
+    margin:45px 0;
+
+
+    text-shadow:
+
+
+    0 0 15px rgba(255,255,255,.15),
+
+
+    0 0 35px rgba(50, 0, 0, 0.5);
+
+
+}
+
+
+
+.subtitle {
+
+
+    color:#3e3e3e;
+
+
+    font-size:24px;
+
+
+    max-width:600px;
+
+
+}
+
+
+
+
+
+
+.quote {
+
+
+    margin-top:70px;
+
+
+    max-width:650px;
+
+
+    padding-left:30px;
+
+
+    border-left:
+
+    2px solid #660000;
+
+
+    color:#656565;
+
+
+    font-family:
+
+    Georgia,
+    serif;
+
+
+    font-style:italic;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+========================
+
+SECTIONS
+
+========================
+*/
+
+
+section {
+
+
+    width:700px;
+
+
+    margin-top:150px;
+
+
+    margin-left:12%;
+
+
+}
+
+
+
+section:nth-child(even){
+
+    margin-left:22%;
+
+}
+
+
+
+
+
+h2 {
+
+
+    font-family:
+    "Galho",
+    serif;
+
+
+    font-size:48px;
+
+
+    font-weight:normal;
+
+
+    color:#656565;
+
+
+    letter-spacing:4px;
+
+
+    margin-bottom:45px;
+
+
+}
+
+
+
+
+
+
+.paper {
+
+
+    background:none;
+
+
+    border:none;
+
+
+    padding:0;
+
+
+    box-shadow:none;
+
+
+}
+
+
+
+p {
+
+
+    max-width:650px;
+
+
+    color:#656565;
+
+
+    font-size:20px;
+
+
+    line-height:2;
+
+
+    margin:30px 0;
+
+
+}
+
+
+
+
+
+
+
+/*
+========================
+
+BUTTONS
+
+========================
+*/
+
+
+.button {
+
+
+    margin-top:45px;
+
+
+    background:
+
+    transparent;
+
+
+    border:
+
+    1px solid #777;
+
+
+    color:#656565;
+
+
+    padding:15px 40px;
+
+
+    font-family:
+
+    "Courier New",
+    monospace;
+
+
+    letter-spacing:3px;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.button:hover {
+
+
+    background:#5500001d;
+
+
+    border-color:#530000;
+
+
+    color:#ffffff;
+
+
+}
+
+
+
+
+
+
+
+
+/*
+========================
+
+SELECTION
+
+========================
+*/
+
+
+.question {
+
+
+    font-family:
+    Georgia,
+    serif;
+
+
+    color:white;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+#test-area {
+
+
+    margin-top:50px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*
+========================
+
+SHEPHERD
+
+========================
+*/
+
+
+#testimony {
+
+
+    margin-top:50px;
+
+
+    color:#ddd;
+
+
+    font-family:
+    Georgia,
+    serif;
+
+
+    font-style:italic;
+
+
+    font-size:26px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/*
+========================
+
+FINAL
+
+========================
+*/
+
+
+#final {
+
+
+    min-height:600px;
+
+
+}
+
+
+
+
+
+
+
+
+footer {
+
+
+    margin-top:100px;
+
+
+    padding:50px;
+
+
+    padding-left:12%;
+
+
+    border-top:
+
+    1px solid #222;
+
+
+    color:#555;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/*
+========================
+
+MOBILE
+
+========================
+*/
+
+
+@media(max-width:800px){
+
+
+
+.hero {
+
+
+    padding-left:30px;
+
+}
+
+
+
+section {
+
+
+    width:auto;
+
+
+    margin-left:30px!important;
+
+
+    margin-right:30px;
+
+
+}
+
+
+
+h1 {
+
+
+    font-size:50px;
+
+
+}
+
+
+
+h2 {
+
+
+    font-size:35px;
+
+
+}
+
+
+
+p {
+
+
+    font-size:18px;
+
+
+}
+
+
+}
