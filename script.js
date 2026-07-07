@@ -84,7 +84,7 @@ Your answers have been recorded.
 
 <p>
 Compatibility:
-<br>
+⨥⨥⨥
 <span class="quote">
 ⨥⨥⨥
 </span>
@@ -260,7 +260,7 @@ height:100vh;
 
 background:black;
 
-color:#777;
+color:##656565;
 
 display:flex;
 
